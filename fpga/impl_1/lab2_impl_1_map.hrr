@@ -1,0 +1,30 @@
+---------------------------------------------------
+Report for cell top
+   Instance path: top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         31        100.0
+                               LUTGATE	         17        100.0
+                                LUTCCU	         14        100.0
+                                 IOBUF	         22        100.0
+                                PFUREG	         14        100.0
+SUB MODULES
+                                  cell	      count    LUT4 Usage(%)
+                                 adder	          1        22.6
+                              time_mux	          1        71.0
+---------------------------------------------------
+Report for cell time_mux
+   Instance path: top/time_mux
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	         22        71.0
+                               LUTGATE	          8        47.1
+                                LUTCCU	         14        100.0
+                                PFUREG	         14        100.0
+---------------------------------------------------
+Report for cell adder
+   Instance path: top/adder
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          7        22.6
+                               LUTGATE	          7        41.2

@@ -1,0 +1,32 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  14 of 5280 (0.265%)
+I/O cells:      22
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               CCU2         7          100.0
+                            FD1P3XZ        14          100.0
+                         HSOSC_CORE         1          100.0
+                                 IB         8          100.0
+                               LUT4        15          100.0
+                                 OB        14          100.0
+SUB MODULES
+                              adder         1
+                           time_mux         1
+                              TOTAL        61
+----------------------------------------------------------------------
+Report for cell time_mux.v1
+Instance Path : time_mux
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                FA2         7          100.0
+                            FD1P3XZ        14          100.0
+                               LUT4         8           53.3
+                              TOTAL        29
+----------------------------------------------------------------------
+Report for cell adder.v1
+Instance Path : adder
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         7           46.7
+                              TOTAL         7

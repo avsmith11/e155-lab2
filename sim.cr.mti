@@ -1,0 +1,29 @@
+C:/Users/oaksh/Desktop/E155/lab2/source/top.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/oaksh/Desktop/E155/lab2/source/top.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module top
+
+Top level modules:
+	top
+
+} {} {}} C:/Users/oaksh/Desktop/E155/lab2/source/adder.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/oaksh/Desktop/E155/lab2/source/adder.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module adder
+
+Top level modules:
+	adder
+
+} {} {}} C:/Users/oaksh/Desktop/E155/lab2/source/adder_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/oaksh/Desktop/E155/lab2/source/adder_tb.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module adder_tb
+
+Top level modules:
+	adder_tb
+
+} {} {}} C:/Users/oaksh/Desktop/E155/lab2/source/seg_encoder.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/oaksh/Desktop/E155/lab2/source/seg_encoder.sv
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module seg_encoder
+
+Top level modules:
+	seg_encoder
+
+} {} {}}

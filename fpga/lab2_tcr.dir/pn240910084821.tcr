@@ -1,0 +1,133 @@
+#Start recording tcl command: 9/8/2024 21:34:40
+#Project Location: C:/Users/oaksh/Desktop/E155/lab2/fpga; Project name: lab2
+prj_open "C:/Users/oaksh/Desktop/E155/lab2/fpga/lab2.rdf"
+prj_remove_source "C:/Users/oaksh/Desktop/E155/lab2/fpga/source/top.sv"
+prj_add_source "C:/Users/oaksh/Desktop/E155/lab2/source/top.sv"
+prj_add_source "C:/Users/oaksh/Desktop/E155/lab2/source/5adder.sv"
+prj_add_source "C:/Users/oaksh/Desktop/E155/lab2/source/time_mux.sv"
+prj_add_source "C:/Users/oaksh/Desktop/E155/lab2/source/segment_driver.sv"
+prj_add_source "C:/Users/oaksh/Desktop/E155/lab2/source/7_seg_encoder.sv"
+prj_remove_source "C:/Users/oaksh/Desktop/E155/lab2/source/time_mux.sv"
+prj_add_source "C:/Users/oaksh/Desktop/E155/lab2/source/7_seg_encoder.sv"
+prj_add_source "C:/Users/oaksh/Desktop/E155/lab2/source/time_mux.sv"
+prj_remove_source "C:/Users/oaksh/Desktop/E155/lab2/source/segment_driver.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/oaksh/Desktop/E155/lab2/source/adder.sv"
+prj_remove_source "C:/Users/oaksh/Desktop/E155/lab2/source/5adder.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/oaksh/Desktop/E155/lab2/source/seg_encoder.sv"
+prj_remove_source "C:/Users/oaksh/Desktop/E155/lab2/source/7_seg_encoder.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/oaksh/Desktop/E155/lab2/fpga/sim/sim.spf"
+prj_add_source "C:/Users/oaksh/Desktop/E155/lab2/source/adder.sv" "C:/Users/oaksh/Desktop/E155/lab2/source/adder_tb.sv" "C:/Users/oaksh/Desktop/E155/lab2/source/adder_tb.tv" "C:/Users/oaksh/Desktop/E155/lab2/source/seg_encoder.sv" "C:/Users/oaksh/Desktop/E155/lab2/source/seg_encoder_tb.sv" "C:/Users/oaksh/Desktop/E155/lab2/source/seg_encoder_tb.tv" "C:/Users/oaksh/Desktop/E155/lab2/source/time_mux.sv" "C:/Users/oaksh/Desktop/E155/lab2/source/time_mux_tb.sv" "C:/Users/oaksh/Desktop/E155/lab2/source/top.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/oaksh/Desktop/E155/lab2/source/time_mux_tb.tv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_disable_source "C:/Users/oaksh/Desktop/E155/lab2/source/adder_tb.tv" "C:/Users/oaksh/Desktop/E155/lab2/source/seg_encoder_tb.tv" "C:/Users/oaksh/Desktop/E155/lab2/source/time_mux_tb.tv" "C:/Users/oaksh/Desktop/E155/lab2/source/adder_tb.sv" "C:/Users/oaksh/Desktop/E155/lab2/source/time_mux_tb.sv" "C:/Users/oaksh/Desktop/E155/lab2/source/seg_encoder_tb.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_remove_source "C:/Users/oaksh/Desktop/E155/lab2/source/seg_encoder_tb.tv"
+prj_remove_source "C:/Users/oaksh/Desktop/E155/lab2/source/seg_encoder_tb.sv"
+prj_enable_source "C:/Users/oaksh/Desktop/E155/lab2/source/adder_tb.tv"
+prj_disable_source "C:/Users/oaksh/Desktop/E155/lab2/source/adder_tb.tv"
+prj_enable_source "C:/Users/oaksh/Desktop/E155/lab2/source/adder_tb.sv"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_disable_source "C:/Users/oaksh/Desktop/E155/lab2/source/adder_tb.sv"
+prj_add_source "C:/Users/oaksh/Desktop/E155/lab2/fpga/sim/sim.spf"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_add_source "C:/Users/oaksh/Desktop/E155/lab2/source/pinouts.pdc"
+prj_enable_source "C:/Users/oaksh/Desktop/E155/lab2/source/pinouts.pdc"
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+prj_run PAR -impl impl_1
+prj_run Export -impl impl_1
+#Stop recording: 9/10/2024 08:48:21
