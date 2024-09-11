@@ -1,26 +1,26 @@
 // Avery Smith, 9/8/24, avsmith@hmc.edu
 // output s alternates between s1 and s2. en1 and en2 go low to depending on which signal is selected
-module time_mux(input logic clk,
+module time_mux( input logic reset, clk,
 				 input logic [3:0] s1, s2,
 				 output logic [3:0] s, 
 				 output logic en1, en2
 );
 
-	// generate 1.46kHz signal from 12MHz clk (12Mhz/2^13 = 1.46kHz)
-	logic [12:0] counter; //13-bit counter to divide clock
+	// generate 1.46kHz signal from 12MHz clk (12Mhz/2^14 = 730Hz)
+	logic [13:0] counter; //14-bit counter to divide clock
 	logic ls_osc;
+	//negate input for hardware considerations
 
-	initial begin
-		counter = 0;
-		ls_osc = 0;
-	end
 
 	// clock divider 
-	always @(posedge clk) begin
-		counter <= counter + 1;
-		if (counter == 13'b1000000000000) begin
-			counter <= 0;
-			ls_osc <= ~ls_osc;
+	always_ff @(posedge clk, posedge reset) begin
+		if (reset) begin counter <= 0; ls_osc <= 0; end
+		else begin
+			counter <= counter + 1;
+			if (counter == 14'b10000000000000) begin
+				counter <= 0;
+				ls_osc <= ~ls_osc;
+			end
 		end
 	end
 		

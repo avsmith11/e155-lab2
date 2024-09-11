@@ -49,7 +49,7 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2024.1.0.34.2
-Mapped on: Tue Sep 10 08:47:02 2024
+Mapped on: Tue Sep 10 20:00:59 2024
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
 
@@ -59,20 +59,20 @@ Command line:   map -pdc C:/Users/oaksh/Desktop/E155/lab2/source/pinouts.pdc -i
 
 <A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
 
-   Number of slice registers:  14 out of  5280 (&lt;1%)
+   Number of slice registers:  15 out of  5280 (&lt;1%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:            31 out of  5280 (1%)
-      Number of logic LUT4s:              17
-      Number of ripple logic:              7 (14 LUT4s)
-   Number of IO sites used:   22 out of 39 (56%)
-      Number of IO sites used for general PIO: 22
+   Number of LUT4s:            56 out of  5280 (1%)
+      Number of logic LUT4s:              40
+      Number of ripple logic:              8 (16 LUT4s)
+   Number of IO sites used:   23 out of 39 (59%)
+      Number of IO sites used for general PIO: 23
       Number of IO sites used for I3C: 0 out of 2 (0%)
       (note: If I3C is not used, its site can be used as general PIO)
-      Number of IO sites used for PIO+I3C: 22 out of 36 (61%)
+      Number of IO sites used for PIO+I3C: 23 out of 36 (64%)
       Number of IO sites used for OD+RGB IO buffers: 0 out of 3 (0%)
       (note: If RGB LED drivers are not used, sites can be used as OD outputs,
        see TN1288 iCE40 LED Driver Usage Guide)
-      Number of IO sites used for PIO+I3C+OD+RGB: 22 out of 39 (56%)
+      Number of IO sites used for PIO+I3C+OD+RGB: 23 out of 39 (59%)
    Number of DSPs:             0 out of 8 (0%)
    Number of I2Cs:             0 out of 2 (0%)
    Number of High Speed OSCs:  1 out of 1 (100%)
@@ -86,22 +86,22 @@ Command line:   map -pdc C:/Users/oaksh/Desktop/E155/lab2/source/pinouts.pdc -i
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             0 out of 1 (0%)
    Number of Clocks:  1
-      Net int_osc: 8 loads, 8 rising, 0 falling (Driver: Pin hf_osc/CLKHF)
+      Net int_osc: 15 loads, 15 rising, 0 falling (Driver: Pin hf_osc/CLKHF)
    Number of Clock Enables:  1
       Net VCC_net: 1 loads, 0 SLICEs
    Number of LSRs:  1
-      Net time_mux.n138: 7 loads, 7 SLICEs
+      Pin reset: 15 loads, 15 SLICEs (Net: reset_c)
    Top 10 highest fanout non-clock nets:
-      Net time_mux.n138: 8 loads
-      Net en1_c: 4 loads
-      Net s: 4 loads
+      Net reset_c: 15 loads
+      Net time_mux.n27: 15 loads
+      Net en1_c: 7 loads
+      Net s_0__N_12: 7 loads
+      Net s_1__N_11: 7 loads
+      Net s_2__N_10: 7 loads
+      Net s_3__N_9: 7 loads
       Net s1_c_0: 4 loads
       Net s2_c_0: 4 loads
-      Net VCC_net: 4 loads
-      Net time_mux.counter[0]: 2 loads
-      Net time_mux.counter[11]: 2 loads
-      Net time_mux.counter[1]: 2 loads
-      Net time_mux.counter[4]: 2 loads
+      Net s1_c_1: 3 loads
 
    Number of warnings:  0
    Number of criticals: 0
@@ -132,6 +132,8 @@ Command line:   map -pdc C:/Users/oaksh/Desktop/E155/lab2/source/pinouts.pdc -i
 | s1[2]               | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | s1[3]               | INPUT     |           |       |       |           |
++---------------------+-----------+-----------+-------+-------+-----------+
+| reset               | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | en2                 | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -164,6 +166,7 @@ Command line:   map -pdc C:/Users/oaksh/Desktop/E155/lab2/source/pinouts.pdc -i
 
 <A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
 
+Block i1 was optimized away.
 
 <A name="mrp_osc"></A><B><U><big>OSC Summary</big></U></B>
 
@@ -181,7 +184,7 @@ Instance Name: hf_osc
 
 <A name="mrp_consum"></A><B><U><big>Constraint Summary</big></U></B>
 
-   Total number of constraints: 23
+   Total number of constraints: 20
    Total number of constraints dropped: 0
 
 <A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
@@ -189,7 +192,7 @@ Instance Name: hf_osc
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
    Peak Memory Usage: 64 MB
-Checksum -- map: a63541f18a8c595ac39dbaafc0b41e12e266cdd3
+Checksum -- map: 25fa852563300e3a7f1fc9ba358d2509b7e9d717
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995
      AT&amp;T Corp.   All rights reserved.

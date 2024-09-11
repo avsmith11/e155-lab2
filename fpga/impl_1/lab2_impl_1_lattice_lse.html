@@ -48,7 +48,7 @@ Copyright (c) 1995 AT&T Corp.   All rights reserved.
 Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
 Copyright (c) 2001 Agere Systems   All rights reserved.
 Copyright (c) 2002-2024 Lattice Semiconductor Corporation,  All rights reserved.
-Tue Sep 10 08:46:48 2024
+Tue Sep 10 20:00:49 2024
 
 
 Command Line:  C:\lscc\radiant\2024.1\ispfpga\bin\nt64\synthesis.exe -f lab2_impl_1_lattice.synproj -logfile lab2_impl_1_lattice.srp -gui -msgset C:/Users/oaksh/Desktop/E155/lab2/fpga/promote.xml 
@@ -184,10 +184,8 @@ INFO <35901018> - synthesis: c:/users/oaksh/desktop/e155/lab2/source/top.sv(3): 
 INFO <35901018> - synthesis: C:/lscc/radiant/2024.1/ispfpga/../cae_library/synthesis/verilog/iCE40UP.v(756): compiling module HSOSC(CLKHF_DIV=2'b10). VERI-1018
 INFO <35901018> - synthesis: c:/users/oaksh/desktop/e155/lab2/source/adder.sv(3): compiling module adder. VERI-1018
 INFO <35901018> - synthesis: c:/users/oaksh/desktop/e155/lab2/source/time_mux.sv(3): compiling module time_mux. VERI-1018
-WARNING <35901209> - synthesis: c:/users/oaksh/desktop/e155/lab2/source/time_mux.sv(14): expression size 32 truncated to fit in target size 13. VERI-1209
-WARNING <35901330> - synthesis: c:/users/oaksh/desktop/e155/lab2/source/top.sv(21): actual bit length 1 differs from formal bit length 7 for port s. VERI-1330
+WARNING <35901209> - synthesis: c:/users/oaksh/desktop/e155/lab2/source/time_mux.sv(19): expression size 32 truncated to fit in target size 14. VERI-1209
 INFO <35901018> - synthesis: c:/users/oaksh/desktop/e155/lab2/source/seg_encoder.sv(4): compiling module seg_encoder. VERI-1018
-WARNING <35901330> - synthesis: c:/users/oaksh/desktop/e155/lab2/source/top.sv(24): actual bit length 1 differs from formal bit length 4 for port s. VERI-1330
                                                          
 
 
@@ -220,16 +218,16 @@ WARNING <35901330> - synthesis: c:/users/oaksh/desktop/e155/lab2/source/top.sv(2
 <A name="lse_area"></A><B><U><big>Area Report</big></U></B>
 
 ################### Begin Area Report (top)######################
-Number of register bits => 14 of 5280 (0 % )
-CCU2 => 7
-FD1P3XZ => 14
+Number of register bits => 15 of 5280 (0 % )
+CCU2 => 8
+FD1P3XZ => 15
 HSOSC_CORE => 1
-IB => 8
-LUT4 => 15
+IB => 9
+LUT4 => 39
 OB => 14
 ################### End Area Report ##################
-Number of odd-length carry chains : 1
-Number of even-length carry chains : 0
+Number of odd-length carry chains : 0
+Number of even-length carry chains : 1
 
 
 <A name="lse_clock"></A><B><U><big>Clock Report</big></U></B>
@@ -242,16 +240,16 @@ Clock Enable Nets
 Number of Clock Enables: 0
 Highest fanout non-clock nets
 Top 10 highest fanout non-clock nets:
-  Net : time_mux/n138, loads : 14
+  Net : reset_c, loads : 15
+  Net : time_mux/n27, loads : 15
+  Net : time_mux/en1_c, loads : 6
+  Net : time_mux/s_1__N_11, loads : 6
+  Net : time_mux/s_2__N_10, loads : 6
+  Net : time_mux/s_0__N_12, loads : 6
+  Net : time_mux/s_3__N_9, loads : 6
   Net : s1_c_0, loads : 4
   Net : s2_c_0, loads : 4
-  Net : time_mux/en1_c, loads : 3
-  Net : time_mux/s, loads : 3
-  Net : s1_c_3, loads : 2
-  Net : s1_c_2, loads : 2
-  Net : s1_c_1, loads : 2
-  Net : s2_c_3, loads : 2
-  Net : s2_c_2, loads : 2
+  Net : s1_c_3, loads : 3
 ################### End Clock Report ##################
 
 
@@ -267,13 +265,13 @@ Constraint Summary:
 Total number of design rule violations: 0
 ###################  End DRC Report  ######################
 
-Peak Memory Usage: 87 MB
+Peak Memory Usage: 86 MB
 
 --------------------------------------------------------------
 Total CPU Time: 4 secs 
-Total REAL Time: 7 secs 
+Total REAL Time: 5 secs 
 --------------------------------------------------------------
-Checksum -- synthesis -- netlist: e58f0f8011f21373f2a4235af6afee528478378
+Checksum -- synthesis -- netlist: 16537b8b41a937f75e7dd3a7a2857302ba824710
 
 
 

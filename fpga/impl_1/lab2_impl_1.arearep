@@ -1,32 +1,40 @@
 ----------------------------------------------------------------------
 Report for cell top.TECH
-Register bits:  14 of 5280 (0.265%)
-I/O cells:      22
+Register bits:  15 of 5280 (0.284%)
+I/O cells:      23
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               CCU2         7          100.0
-                            FD1P3XZ        14          100.0
+                               CCU2         8          100.0
+                            FD1P3XZ        15          100.0
                          HSOSC_CORE         1          100.0
-                                 IB         8          100.0
-                               LUT4        15          100.0
+                                 IB         9          100.0
+                               LUT4        39          100.0
                                  OB        14          100.0
 SUB MODULES
                               adder         1
+                        seg_encoder         1
                            time_mux         1
-                              TOTAL        61
+                              TOTAL        89
 ----------------------------------------------------------------------
 Report for cell time_mux.v1
 Instance Path : time_mux
                                   Cell usage:
                                cell     count   Res Usage(%)
-                                FA2         7          100.0
-                            FD1P3XZ        14          100.0
-                               LUT4         8           53.3
-                              TOTAL        29
+                                FA2         8          100.0
+                            FD1P3XZ        15          100.0
+                               LUT4        25           64.1
+                              TOTAL        48
 ----------------------------------------------------------------------
 Report for cell adder.v1
 Instance Path : adder
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         7           46.7
+                               LUT4         7           17.9
+                              TOTAL         7
+----------------------------------------------------------------------
+Report for cell seg_encoder.v1
+Instance Path : ONLY_ONE_SEGMENT_ENCODER
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         7           17.9
                               TOTAL         7

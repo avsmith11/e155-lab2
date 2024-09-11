@@ -1,9 +1,9 @@
-C:/Users/oaksh/Desktop/E155/lab2/source/top.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/oaksh/Desktop/E155/lab2/source/top.sv
+C:/Users/oaksh/Desktop/E155/lab2/source/top_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/oaksh/Desktop/E155/lab2/source/top_tb.sv
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
--- Compiling module top
+-- Compiling module testbench
 
 Top level modules:
-	top
+	testbench
 
 } {} {}} C:/Users/oaksh/Desktop/E155/lab2/source/adder.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/oaksh/Desktop/E155/lab2/source/adder.sv
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
@@ -11,6 +11,13 @@ Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
 
 Top level modules:
 	adder
+
+} {} {}} C:/Users/oaksh/Desktop/E155/lab2/source/time_mux_tb.sv {1 {vlog -work work -vopt -sv -stats=none {C:\Users\oaksh\Desktop\E155\lab2\source\time_mux_tb.sv}
+Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024
+-- Compiling module time_mux_tb
+
+Top level modules:
+	time_mux_tb
 
 } {} {}} C:/Users/oaksh/Desktop/E155/lab2/source/adder_tb.sv {1 {vlog -work work -vopt -sv -stats=none C:/Users/oaksh/Desktop/E155/lab2/source/adder_tb.sv
 Questa Lattice OEM Edition-64 vlog 2024.2 Compiler 2024.05 May 20 2024

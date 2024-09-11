@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<userSetting name="C:/Users/oaksh/Desktop/E155/lab2/fpga/promote.xml" version="Diamond (64-bit) 2024.1.0.34.2" date="Tue Sep 10 08:47:19 2024" vendor="Lattice Semiconductor Corporation" >
+<userSetting name="C:/Users/oaksh/Desktop/E155/lab2/fpga/promote.xml" version="Diamond (64-bit) 2024.1.0.34.2" date="Tue Sep 10 20:01:15 2024" vendor="Lattice Semiconductor Corporation" >
   <msg mid="35901328" type="Info" internal="true" />
-  <msg mid="35901012" type="Error" internal="true" />
-  <msg mid="35901209" type="Warning" internal="true" />
   <msg mid="35921504" type="Info" internal="true" />
+  <msg mid="35901209" type="Warning" internal="true" />
+  <msg mid="35901012" type="Error" internal="true" />
   <msg mid="35901138" type="Error" internal="true" />
   <msg mid="35901349" type="Error" internal="true" />
   <msg mid="35902086" type="Error" internal="true" />

@@ -6,7 +6,7 @@ module seg_encoder (
 	output logic [6:0] seg
 );
 
-	always_comb begin
+	always_comb
 		case (s)
 			// segments g:a
 			4'h0: seg = ~(7'b0111111);
@@ -27,6 +27,5 @@ module seg_encoder (
 			4'hf: seg = ~(7'b1110001);
 			default: seg = ~(7'b0000001);
 		endcase
-	end
 	
 endmodule

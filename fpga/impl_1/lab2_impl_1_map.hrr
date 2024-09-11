@@ -3,28 +3,36 @@ Report for cell top
    Instance path: top
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         31        100.0
-                               LUTGATE	         17        100.0
-                                LUTCCU	         14        100.0
-                                 IOBUF	         22        100.0
-                                PFUREG	         14        100.0
+                                  LUT4	         56        100.0
+                               LUTGATE	         40        100.0
+                                LUTCCU	         16        100.0
+                                 IOBUF	         23        100.0
+                                PFUREG	         15        100.0
 SUB MODULES
                                   cell	      count    LUT4 Usage(%)
-                                 adder	          1        22.6
-                              time_mux	          1        71.0
+                                 adder	          1        12.5
+                           seg_encoder	          1        12.5
+                              time_mux	          1        73.2
 ---------------------------------------------------
 Report for cell time_mux
    Instance path: top/time_mux
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	         22        71.0
-                               LUTGATE	          8        47.1
-                                LUTCCU	         14        100.0
-                                PFUREG	         14        100.0
+                                  LUT4	         41        73.2
+                               LUTGATE	         25        62.5
+                                LUTCCU	         16        100.0
+                                PFUREG	         15        100.0
 ---------------------------------------------------
 Report for cell adder
    Instance path: top/adder
                      Cell usage:
                                   cell	      count    Res Usage(%)
-                                  LUT4	          7        22.6
-                               LUTGATE	          7        41.2
+                                  LUT4	          7        12.5
+                               LUTGATE	          7        17.5
+---------------------------------------------------
+Report for cell seg_encoder
+   Instance path: top/ONLY_ONE_SEGMENT_ENCODER
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  LUT4	          7        12.5
+                               LUTGATE	          7        17.5
