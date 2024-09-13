@@ -1,6 +1,6 @@
 // Avery Smith, 9/8/24, avsmith@hmc.edu
 // output s alternates between s1 and s2. en1 and en2 go low to depending on which signal is selected
-module time_mux( input logic reset, clk,
+module time_mux( input logic nreset, clk,
 				 input logic [3:0] s1, s2,
 				 output logic [3:0] s, 
 				 output logic en1, en2
@@ -13,8 +13,8 @@ module time_mux( input logic reset, clk,
 
 
 	// clock divider 
-	always_ff @(posedge clk, posedge reset) begin
-		if (reset) begin counter <= 0; ls_osc <= 0; end
+	always_ff @(posedge clk) begin
+		if (nreset  == 0) begin counter <= 0; ls_osc <= 0; end
 		else begin
 			counter <= counter + 1;
 			if (counter == 14'b10000000000000) begin

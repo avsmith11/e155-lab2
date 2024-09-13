@@ -8,13 +8,13 @@ I/O cells:      23
                             FD1P3XZ        15          100.0
                          HSOSC_CORE         1          100.0
                                  IB         9          100.0
-                               LUT4        39          100.0
+                               LUT4        27          100.0
                                  OB        14          100.0
 SUB MODULES
                               adder         1
                         seg_encoder         1
                            time_mux         1
-                              TOTAL        89
+                              TOTAL        77
 ----------------------------------------------------------------------
 Report for cell time_mux.v1
 Instance Path : time_mux
@@ -22,19 +22,19 @@ Instance Path : time_mux
                                cell     count   Res Usage(%)
                                 FA2         8          100.0
                             FD1P3XZ        15          100.0
-                               LUT4        25           64.1
-                              TOTAL        48
-----------------------------------------------------------------------
-Report for cell adder.v1
-Instance Path : adder
-                                  Cell usage:
-                               cell     count   Res Usage(%)
-                               LUT4         7           17.9
-                              TOTAL         7
+                               LUT4        14           51.9
+                              TOTAL        37
 ----------------------------------------------------------------------
 Report for cell seg_encoder.v1
 Instance Path : ONLY_ONE_SEGMENT_ENCODER
                                   Cell usage:
                                cell     count   Res Usage(%)
-                               LUT4         7           17.9
+                               LUT4         6           22.2
+                              TOTAL         6
+----------------------------------------------------------------------
+Report for cell adder.v1
+Instance Path : adder
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                               LUT4         7           25.9
                               TOTAL         7

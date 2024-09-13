@@ -1,6 +1,6 @@
 // Avery Smith, 9/8/24, avsmith@hmc.edu
 // takes in two 4-bit signals and outputs time-multiplexed signals for two 7-segment displays using ONE instance of segment_driver
-module top( input reset,
+module top( input nreset,
 			input logic [3:0] s1, s2,
 			output logic [4:0] sum,
 			output logic [6:0] seg,
@@ -21,7 +21,7 @@ module top( input reset,
 	
 	// generate time multiplexed signal
 	logic [3:0] s;
-	time_mux time_mux(reset, int_osc, ns1, ns2, s, en1, en2);
+	time_mux time_mux(nreset, int_osc, ns1, ns2, s, en1, en2);
 	
 	// send multiplexed signal to 7_seg encoder
 	seg_encoder ONLY_ONE_SEGMENT_ENCODER(s, seg);

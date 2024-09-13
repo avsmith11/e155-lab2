@@ -49,7 +49,7 @@ Package: SG48
 Performance Grade:  High-Performance_1.2V
 
 Mapper:    version Radiant Software (64-bit) 2024.1.0.34.2
-Mapped on: Tue Sep 10 20:00:59 2024
+Mapped on: Thu Sep 12 15:00:25 2024
 
 <A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
 
@@ -61,8 +61,8 @@ Command line:   map -pdc C:/Users/oaksh/Desktop/E155/lab2/source/pinouts.pdc -i
 
    Number of slice registers:  15 out of  5280 (&lt;1%)
    Number of I/O registers:      0 out of   117 (0%)
-   Number of LUT4s:            56 out of  5280 (1%)
-      Number of logic LUT4s:              40
+   Number of LUT4s:            44 out of  5280 (1%)
+      Number of logic LUT4s:              28
       Number of ripple logic:              8 (16 LUT4s)
    Number of IO sites used:   23 out of 39 (59%)
       Number of IO sites used for general PIO: 23
@@ -86,14 +86,14 @@ Command line:   map -pdc C:/Users/oaksh/Desktop/E155/lab2/source/pinouts.pdc -i
    Number of EBRs:             0 out of 30 (0%)
    Number of PLLs:             0 out of 1 (0%)
    Number of Clocks:  1
-      Net int_osc: 15 loads, 15 rising, 0 falling (Driver: Pin hf_osc/CLKHF)
+      Net int_osc: 9 loads, 9 rising, 0 falling (Driver: Pin hf_osc/CLKHF)
    Number of Clock Enables:  1
       Net VCC_net: 1 loads, 0 SLICEs
-   Number of LSRs:  1
-      Pin reset: 15 loads, 15 SLICEs (Net: reset_c)
+   Number of LSRs:  2
+      Net time_mux.n40: 8 loads, 8 SLICEs
+      Net time_mux.n3: 1 loads, 1 SLICEs
    Top 10 highest fanout non-clock nets:
-      Net reset_c: 15 loads
-      Net time_mux.n27: 15 loads
+      Net time_mux.n40: 8 loads
       Net en1_c: 7 loads
       Net s_0__N_12: 7 loads
       Net s_1__N_11: 7 loads
@@ -102,6 +102,7 @@ Command line:   map -pdc C:/Users/oaksh/Desktop/E155/lab2/source/pinouts.pdc -i
       Net s1_c_0: 4 loads
       Net s2_c_0: 4 loads
       Net s1_c_1: 3 loads
+      Net s1_c_3: 3 loads
 
    Number of warnings:  0
    Number of criticals: 0
@@ -133,7 +134,7 @@ Command line:   map -pdc C:/Users/oaksh/Desktop/E155/lab2/source/pinouts.pdc -i
 +---------------------+-----------+-----------+-------+-------+-----------+
 | s1[3]               | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
-| reset               | INPUT     |           |       |       |           |
+| nreset              | INPUT     |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
 | en2                 | OUTPUT    |           |       |       |           |
 +---------------------+-----------+-----------+-------+-------+-----------+
@@ -184,7 +185,7 @@ Instance Name: hf_osc
 
 <A name="mrp_consum"></A><B><U><big>Constraint Summary</big></U></B>
 
-   Total number of constraints: 20
+   Total number of constraints: 31
    Total number of constraints dropped: 0
 
 <A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
@@ -192,7 +193,7 @@ Instance Name: hf_osc
    Total CPU Time: 0 secs
    Total REAL Time: 0 secs
    Peak Memory Usage: 64 MB
-Checksum -- map: 25fa852563300e3a7f1fc9ba358d2509b7e9d717
+Checksum -- map: 132a36e93400fcb020e199377ee6b3c64ee87259
 Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
 Copyright (c) 1995
      AT&amp;T Corp.   All rights reserved.
